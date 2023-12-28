@@ -9,7 +9,7 @@ export class Customer {
     public street1?: string,
     public street2?: string,
     public city?: string,
-    public state = '',
+    public province = '',
     public zip?: string
   ) {}
 }

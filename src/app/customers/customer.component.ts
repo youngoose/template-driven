@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NgForm, NgModel } from '@angular/forms';
+import { NgForm } from '@angular/forms';
 import { Customer } from './customer';
 
 @Component({
@@ -9,10 +9,6 @@ import { Customer } from './customer';
 })
 export class CustomerComponent {
   customer = new Customer();
-
-  isInvalid(model: NgModel) {
-    return (model.touched || model.dirty) && !model.valid;
-  }
 
   save(customerForm: NgForm): void {
     console.log(customerForm.form);
